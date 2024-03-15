@@ -168,16 +168,16 @@ async function postCars(request, response) {
             } else {
               const values = [selectedCar.Id * 1000 + allCarEngines.length + 1, selectedCar.Id, 1, selectedEngine.EngineID, 0, selectedEngine.ManufacturerID, 10000, 20.0, 0.0, 1.0, 1.0];
               console.log(values);
-              db.run(insertEngine, values, function (error) {
-                if (error) {
-                  return console.error(`An error ocurred while updating ${selectedEngine.EngineName} to ${selectedCar.MediaName} for ${selectedCar.Source}`, error);
-                }
-              });
-              myDb.run(insertEngineIntoCarsDb, values, function (error) {
-                if (error) {
-                  return console.error(`An error ocurred while updating ${selectedEngine.EngineName} to ${selectedCar.MediaName} for ${selectedCar.Source} in cars.db`, error);
-                }
-              });
+              // db.run(insertEngine, values, function (error) {
+              //   if (error) {
+              //     return console.error(`An error ocurred while updating ${selectedEngine.EngineName} to ${selectedCar.MediaName} for ${selectedCar.Source}`, error);
+              //   }
+              // });
+              // myDb.run(insertEngineIntoCarsDb, values, function (error) {
+              //   if (error) {
+              //     return console.error(`An error ocurred while updating ${selectedEngine.EngineName} to ${selectedCar.MediaName} for ${selectedCar.Source} in cars.db`, error);
+              //   }
+              // });
               response.status(201).json({ message: `Engine ${selectedEngine.EngineID} ${selectedEngine.EngineName} successfully added to ${selectedCar.Id} ${selectedCar.MediaName} for ${selectedCar.Source}` });
             }
           });

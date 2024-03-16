@@ -6,18 +6,6 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: forzaFont;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: rgb(9, 9, 9);
-}
-
-html.light {
-  font-family: forzaFont;
-}
-
-html.dark {
-  font-family: forzaFont;
 }
 
 *,
@@ -27,6 +15,23 @@ html.dark {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+}
+
+.dark {
+  font-family: forzaFont;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(9, 9, 9);
+  --header-color: rgb(36, 36, 36);
+  --button-color: rgb(26, 26, 26);
+  --line-color-one: rgb(75, 75, 75);
+  --line-color-two: rgb(95, 95, 95);
+  --line-hover-color: rgb(36, 36, 36);
+  --outline-color: rgb(136, 65, 52);
+  --selected-line-color: rgb(25, 25, 25);
+  --selected-button-color: rgb(255, 0, 0);
+  --confirm-button-color: rgb(152, 251, 152);
+  --cancel-button-color: rgb(255, 0, 0);
 }
 
 table {
@@ -51,7 +56,7 @@ button {
   padding: 5px 0;
   font-size: 1em;
   font-family: inherit;
-  background-color: rgb(26, 26, 26);
+  background-color: var(--button-color);
   cursor: pointer;
   white-space: nowrap;
   width: 100%;
@@ -77,12 +82,12 @@ ul {
 .main-table thead {
   position: sticky;
   top: 0;
-  background-color: rgb(36, 36, 36);
+  background-color: var(--header-color);
 }
 
 .main-table tr:hover {
-  outline: 1px solid rgb(136, 65, 52);
-  background-color: rgb(36, 36, 36);
+  outline: 1px solid var(--outline-color);
+  background-color: var(--line-hover-color);
 }
 
 .search-bar {
@@ -90,24 +95,24 @@ ul {
 }
 
 .heading button {
-  border: 1px solid rgb(26, 26, 26);
+  border: 1px solid var(--button-color);
 }
 
 .heading button:hover {
-  border: 1px solid rgb(136, 65, 52);
+  border: 1px solid var(--outline-color);
 }
 
 .no-hover-button button:hover {
-  border: 1px solid rgb(26, 26, 26);
+  border: 1px solid var(--button-color);
   cursor: default;
 }
 
 .even {
-  background-color: rgb(75, 75, 75);
+  background-color: var(--line-color-one);
 }
 
 .odd {
-  background-color: rgb(95, 95, 95);
+  background-color: var(--line-color-two);
 }
 
 .selected-engine-td,
@@ -117,15 +122,17 @@ ul {
 }
 
 .selected-tr {
-  outline: 2px solid rgb(136, 65, 52);
-  background-color: rgb(25, 25, 25);
+  outline: 2px solid var(--outline-color);
+  background-color: var(--selected-line-color);
 }
 
 .selected {
-  background-color: rgb(255, 0, 0);
+  background-color: var(--selected-button-color);
 }
 
 .already-set {
+  /* background-color: #191919; */
+  /* color: rgb(255, 255, 255); */
   cursor: default;
 }
 
@@ -137,7 +144,7 @@ ul {
   width: 150px;
   height: fit-content;
   padding: 5px 0;
-  background-color: rgb(152, 251, 152);
+  background-color: var(--confirm-button-color);
   color: #090909;
 }
 
@@ -154,7 +161,7 @@ ul {
   width: 150px;
   height: fit-content;
   padding: 5px 0;
-  background-color: rgb(152, 251, 152);
+  background-color: var(--confirm-button-color);
   color: #090909;
 }
 
@@ -208,18 +215,18 @@ ul {
 
 .confirm-button:hover {
   color: black;
-  background-color: rgb(152,251, 152);
+  background-color: var(--confirm-button-color);
 }
 
 .cancel-button:hover {
-  background-color: rgb(255, 0, 0);
+  background-color: var(--cancel-button-color);
 }
 
 .status-bar {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: rgb(25, 25, 25);
+  background-color:rgb(25, 25, 25);
   color: white;
   display: flex;
   opacity: 0;
@@ -228,10 +235,11 @@ ul {
 
 .status-bar p {
   margin-left: 200px;
+
 }
 
 .show {
-  display: flex;
+  display:flex;
   animation: hide 6s;
 }
 

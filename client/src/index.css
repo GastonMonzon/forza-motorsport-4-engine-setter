@@ -6,6 +6,28 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: forzaFont;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(9, 9, 9);
+  --header-color: rgb(36, 36, 36);
+  --button-color: rgb(26, 26, 26);
+  --line-color-one: rgb(75, 75, 75);
+  --line-color-two: rgb(95, 95, 95);
+  --line-hover-color: rgb(36, 36, 36);
+  --outline-color: rgb(136, 65, 52);
+  --selected-line-color: rgb(25, 25, 25);
+  --selected-button-color: rgb(255, 0, 0);
+  --confirm-button-color: rgb(152, 251, 152);
+  --cancel-button-color: rgb(255, 0, 0);
+}
+
+html.light {
+  font-family: forzaFont;
+}
+
+html.dark {
+  font-family: forzaFont;
 }
 
 *,
@@ -15,6 +37,10 @@ html {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+}
+
+.dark {
+  
 }
 
 table {

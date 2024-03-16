@@ -347,7 +347,7 @@ export default function App() {
   }, [manufacturerSearch, modelSearch, yearSearch, engineSearch, dispSearch, aspSearch, powerSearch, torqueSearch]);
 
   return (
-    <div id='main-container' >
+    <div>
       <table className='main-table' >
         <thead>
           <tr className='heading' >

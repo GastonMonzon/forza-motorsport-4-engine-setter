@@ -3,7 +3,9 @@
   src: url(./assets/Berthold%20Akzidenz%20Grotesk%20Extended.otf);
 }
 
-:root {
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,23 +24,6 @@
   --selected-button-color: rgb(255, 0, 0);
   --confirm-button-color: rgb(152, 251, 152);
   --cancel-button-color: rgb(255, 0, 0);
-}
-
-:root.light {
-  color: rgba(0, 0, 0, 0.87);
-  background-color: rgb(255, 255, 255);
-  font-family: forzaFont;
-}
-
-:root.dark {
-  color: rgba(255, 255, 255, 0.87);
-  background-color: rgb(9, 9, 9);
-  font-family: forzaFont;
-}
-
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 *,

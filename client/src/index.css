@@ -10,16 +10,6 @@ html {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.87);
   background-color: rgb(9, 9, 9);
-  --header-color: rgb(36, 36, 36);
-  --button-color: rgb(26, 26, 26);
-  --line-color-one: rgb(75, 75, 75);
-  --line-color-two: rgb(95, 95, 95);
-  --line-hover-color: rgb(36, 36, 36);
-  --outline-color: rgb(136, 65, 52);
-  --selected-line-color: rgb(25, 25, 25);
-  --selected-button-color: rgb(255, 0, 0);
-  --confirm-button-color: rgb(152, 251, 152);
-  --cancel-button-color: rgb(255, 0, 0);
 }
 
 html.light {
@@ -61,7 +51,7 @@ button {
   padding: 5px 0;
   font-size: 1em;
   font-family: inherit;
-  background-color: var(--button-color);
+  background-color: rgb(26, 26, 26);
   cursor: pointer;
   white-space: nowrap;
   width: 100%;
@@ -87,12 +77,12 @@ ul {
 .main-table thead {
   position: sticky;
   top: 0;
-  background-color: var(--header-color);
+  background-color: rgb(36, 36, 36);
 }
 
 .main-table tr:hover {
-  outline: 1px solid var(--outline-color);
-  background-color: var(--line-hover-color);
+  outline: 1px solid rgb(136, 65, 52);
+  background-color: rgb(36, 36, 36);
 }
 
 .search-bar {
@@ -100,24 +90,24 @@ ul {
 }
 
 .heading button {
-  border: 1px solid var(--button-color);
+  border: 1px solid rgb(26, 26, 26);
 }
 
 .heading button:hover {
-  border: 1px solid var(--outline-color);
+  border: 1px solid rgb(136, 65, 52);
 }
 
 .no-hover-button button:hover {
-  border: 1px solid var(--button-color);
+  border: 1px solid rgb(26, 26, 26);
   cursor: default;
 }
 
 .even {
-  background-color: var(--line-color-one);
+  background-color: rgb(75, 75, 75);
 }
 
 .odd {
-  background-color: var(--line-color-two);
+  background-color: rgb(95, 95, 95);
 }
 
 .selected-engine-td,
@@ -127,17 +117,15 @@ ul {
 }
 
 .selected-tr {
-  outline: 2px solid var(--outline-color);
-  background-color: var(--selected-line-color);
+  outline: 2px solid rgb(136, 65, 52);
+  background-color: rgb(25, 25, 25);
 }
 
 .selected {
-  background-color: var(--selected-button-color);
+  background-color: rgb(255, 0, 0);
 }
 
 .already-set {
-  /* background-color: #191919; */
-  /* color: rgb(255, 255, 255); */
   cursor: default;
 }
 
@@ -149,7 +137,7 @@ ul {
   width: 150px;
   height: fit-content;
   padding: 5px 0;
-  background-color: var(--confirm-button-color);
+  background-color: rgb(152, 251, 152);
   color: #090909;
 }
 
@@ -166,7 +154,7 @@ ul {
   width: 150px;
   height: fit-content;
   padding: 5px 0;
-  background-color: var(--confirm-button-color);
+  background-color: rgb(152, 251, 152);
   color: #090909;
 }
 
@@ -220,18 +208,18 @@ ul {
 
 .confirm-button:hover {
   color: black;
-  background-color: var(--confirm-button-color);
+  background-color: rgb(152,251, 152);
 }
 
 .cancel-button:hover {
-  background-color: var(--cancel-button-color);
+  background-color: rgb(255, 0, 0);
 }
 
 .status-bar {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color:rgb(25, 25, 25);
+  background-color: rgb(25, 25, 25);
   color: white;
   display: flex;
   opacity: 0;
@@ -240,11 +228,10 @@ ul {
 
 .status-bar p {
   margin-left: 200px;
-
 }
 
 .show {
-  display:flex;
+  display: flex;
   animation: hide 6s;
 }
 

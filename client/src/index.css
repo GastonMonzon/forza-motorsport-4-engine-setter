@@ -1,6 +1,6 @@
 @font-face {
   font-family: forzaFont;
-  src: url(./assets/Berthold%20Akzidenz%20Grotesk%20Extended.otf);
+  src: url(./assets/BertholdAkzidenzGroteskExtended.otf);
 }
 
 :root {
@@ -24,7 +24,6 @@
   --selected-button-color: rgb(255, 0, 0);
   --confirm-button-color: rgb(152, 251, 152);
   --cancel-button-color: rgb(255, 0, 0);
-
 }
 
 html {

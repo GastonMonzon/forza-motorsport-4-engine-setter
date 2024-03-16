@@ -4,8 +4,9 @@
 }
 
 :root {
+  font-family: forzaFont;
   font-size: 14px;
-  color-scheme: light dark;
+  color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: rgb(9, 9, 9);
   font-synthesis: none;
@@ -27,6 +28,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: forzaFont;
 }
 
 *,
@@ -35,6 +37,7 @@ html {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+  font-family: forzaFont;
 }
 
 body {
@@ -46,16 +49,19 @@ table {
   border-spacing: 0px;
   margin: 0 5px 5px 5px;
   width: 99%;
+  font-family: forzaFont;
 }
 
 a {
   color: inherit;
   text-decoration: inherit;
+  font-family: forzaFont;
 }
 
 p {
   white-space: nowrap;
   padding: 5px;
+  font-family: forzaFont;
 }
 
 button {
@@ -67,6 +73,7 @@ button {
   cursor: pointer;
   white-space: nowrap;
   width: 100%;
+  font-family: forzaFont;
 }
 
 input {
@@ -74,6 +81,7 @@ input {
   height: max-content;
   font-size: 1.2em;
   border: 1px solid black;
+  font-family: forzaFont;
 }
 
 input:focus {
@@ -260,21 +268,6 @@ ul {
 
 .align-right {
   text-align: right;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 @keyframes hide {

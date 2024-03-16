@@ -5,9 +5,9 @@
 
 :root {
   font-size: 14px;
+  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: rgb(9, 9, 9);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,7 +22,6 @@
   --selected-button-color: rgb(255, 0, 0);
   --confirm-button-color: rgb(152, 251, 152);
   --cancel-button-color: rgb(255, 0, 0);
-
 }
 
 html {
@@ -36,6 +35,9 @@ html {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+}
+
+body {
   font-family: forzaFont;
 }
 
@@ -231,7 +233,7 @@ ul {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: rgb(25, 25, 25);
+  background-color:rgb(25, 25, 25);
   color: white;
   display: flex;
   opacity: 0;
@@ -244,7 +246,7 @@ ul {
 }
 
 .show {
-  display: flex;
+  display:flex;
   animation: hide 6s;
 }
 
@@ -260,15 +262,28 @@ ul {
   text-align: right;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
 @keyframes hide {
   0% {
     opacity: 1;
   }
-
   70% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }

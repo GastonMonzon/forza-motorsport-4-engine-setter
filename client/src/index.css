@@ -10,8 +10,9 @@ html {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.87);
   background-color: rgb(9, 9, 9);
-  --header-color: rgb(36, 36, 36);
-  --button-color: rgb(26, 26, 26);
+  --header-color: rgb(90, 90, 90);
+  --button-color: rgb(82, 82, 82);
+  --input-color: rgb(55, 55, 55);
   --line-color-one: rgb(75, 75, 75);
   --line-color-two: rgb(95, 95, 95);
   --line-hover-color: rgb(36, 36, 36);
@@ -22,25 +23,12 @@ html {
   --cancel-button-color: rgb(255, 0, 0);
 }
 
-html.light {
-  font-family: forzaFont;
-}
-
-html.dark {
-  font-family: forzaFont;
-}
-
 *,
 *:before,
 *:after {
-  font-family: forzaFont;
   box-sizing: inherit;
   padding: 0;
   margin: 0;
-}
-
-.dark {
-  
 }
 
 table {
@@ -48,19 +36,16 @@ table {
   border-spacing: 0px;
   margin: 0 5px 5px 5px;
   width: 99%;
-  font-family: forzaFont;
 }
 
 a {
   color: inherit;
   text-decoration: inherit;
-  font-family: forzaFont;
 }
 
 p {
   white-space: nowrap;
   padding: 5px;
-  font-family: forzaFont;
 }
 
 button {
@@ -68,6 +53,7 @@ button {
   padding: 5px 0;
   font-size: 1em;
   font-family: inherit;
+  color: rgba(255, 255, 255, 0.87);
   background-color: var(--button-color);
   cursor: pointer;
   white-space: nowrap;
@@ -81,6 +67,7 @@ input {
   font-size: 1.2em;
   border: 1px solid black;
   font-family: forzaFont;
+  background-color: var(--input-color);
 }
 
 input:focus {
@@ -99,44 +86,36 @@ ul {
   position: sticky;
   top: 0;
   background-color: var(--header-color);
-  font-family: forzaFont;
 }
 
 .main-table tr:hover {
   outline: 1px solid var(--outline-color);
   background-color: var(--line-hover-color);
-  font-family: forzaFont;
 }
 
 .search-bar {
   height: 32px;
-  font-family: forzaFont;
 }
 
 .heading button {
   border: 1px solid var(--button-color);
-  font-family: forzaFont;
 }
 
 .heading button:hover {
   border: 1px solid var(--outline-color);
-  font-family: forzaFont;
 }
 
 .no-hover-button button:hover {
   border: 1px solid var(--button-color);
   cursor: default;
-  font-family: forzaFont;
 }
 
 .even {
   background-color: var(--line-color-one);
-  font-family: forzaFont;
 }
 
 .odd {
   background-color: var(--line-color-two);
-  font-family: forzaFont;
 }
 
 .selected-engine-td,

@@ -3,9 +3,13 @@
   src: url(./assets/Berthold%20Akzidenz%20Grotesk%20Extended.otf);
 }
 
-:root {
+:root,
+:root.light,
+:root.dark {
   font-family: forzaFont;
   font-size: 14px;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(9, 9, 9);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -54,7 +58,6 @@ a {
 p {
   white-space: nowrap;
   padding: 5px;
-  font-family: forzaFont;
 }
 
 button {
@@ -66,7 +69,6 @@ button {
   cursor: pointer;
   white-space: nowrap;
   width: 100%;
-  font-family: forzaFont;
 }
 
 input {
@@ -74,7 +76,6 @@ input {
   height: max-content;
   font-size: 1.2em;
   border: 1px solid black;
-  font-family: forzaFont;
 }
 
 input:focus {

@@ -22,6 +22,14 @@ html {
   --cancel-button-color: rgb(255, 0, 0);
 }
 
+html.light {
+  font-family: forzaFont;
+}
+
+html.dark {
+  font-family: forzaFont;
+}
+
 *,
 *:before,
 *:after {

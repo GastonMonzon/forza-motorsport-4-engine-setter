@@ -232,7 +232,7 @@ ul {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color:rgb(25, 25, 25);
+  background-color: rgb(25, 25, 25);
   color: white;
   display: flex;
   opacity: 0;
@@ -245,7 +245,7 @@ ul {
 }
 
 .show {
-  display:flex;
+  display: flex;
   animation: hide 6s;
 }
 
@@ -265,6 +265,7 @@ ul {
   :root {
     color: #213547;
     background-color: #ffffff;
+    font-family: forzaFont;
   }
 
   a:hover {
@@ -280,9 +281,11 @@ ul {
   0% {
     opacity: 1;
   }
+
   70% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }

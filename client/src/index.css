@@ -24,6 +24,18 @@
   --cancel-button-color: rgb(255, 0, 0);
 }
 
+:root.light {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgb(255, 255, 255);
+  font-family: forzaFont;
+}
+
+:root.dark {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(9, 9, 9);
+  font-family: forzaFont;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;

@@ -6,7 +6,7 @@
 :root,
 :root.light,
 :root.dark {
-  color-scheme: light;
+  color-scheme: dark;
   font-family: forzaFont;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.87);

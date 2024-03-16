@@ -261,22 +261,6 @@ ul {
   text-align: right;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-    font-family: forzaFont;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
 @keyframes hide {
   0% {
     opacity: 1;
